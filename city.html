@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>My first three.js app</title>
+		<style>
+			html,body { margin: 0;  overflow: hidden;}
+			canvas { display: block;}
+			.btn-group button {
+				background-color: #389bc2; /* Green background */
+				border: 1px solid #096e96; /* Green border */
+				color: white; /* White text */
+				padding: 10px 24px; /* Some padding */
+				cursor: pointer; /* Pointer/hand icon */
+				display: block; /* Make the buttons appear below each other */
+				margin: 5px;
+				width: 200px;
+				}
+			/* Add a background color on hover */
+			.btn-group button:hover {
+			background-color: #16c4bf;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container"></div>
+		<div class="btn-group" style= "position: absolute;">
+			<button id="rayTracing">Landmark Visibility</button>
+			<button onClick="document.location.reload(true)">Reload Page</button>
+			<button id="shadowMap">Shadow Mapping</button>
+		</div>
+		<div id="my_dataviz" style= "position: absolute; background-color: antiquewhite; margin-top: 200px;;">
+		</div>
+		
+		<script src="js/three.js"></script>
+		<script src ="js/three.min.js"></script> 
+		<script src="js/dat.gui.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="https://d3js.org/d3.v4.js"></script>
+
+		<!-- specific plugin -->
+		<script src="https://d3js.org/d3-contour.v1.min.js"></script>
+		<script type="text/javascript" src="js/city.js"></script>
+	</body>
+</html>
